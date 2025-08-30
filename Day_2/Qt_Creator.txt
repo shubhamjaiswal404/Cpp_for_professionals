@@ -1,0 +1,111 @@
+ # C++ Programming on Linux 
+
+Using Qt Creator IDE Cross Platform Application and UI Framework
+
+
+// writting C++ program on linux environment directly through Qt creator a GUI ( grapical user interface ), Qt Creator is a IDE 
+
+Note :: We have to install Qt creator on Linux envitonment 
+
+Write in terminal :: go to terminal wite qtcreator
+
+//Qt creator GUI is open   
+
+	Qt creator is open click on Files then select new project then choose Non-Qt Project and Plain C++ Application then click on choose
+	
+		Files ---> new project ---> Non-Qt Project ---> Plain C++ Application ---> choose
+
+	Then we choose the location of project frome Browse and give project name 
+
+		we create new floder which is our project working directory in which our project  subdirectory 
+
+	Then we choose defeault build system qmake the next 
+
+	Kit section select the Desktop Qt 6.9.1 then click on next 
+
+	Add to version control : None 
+
+	click on finish
+
+
+	now select the build Debug or Release  from  left - bottom corner side in Qt creator
+
+	now build click on hummer button on  left - bottom corner side in Qt creator 
+
+	Build is green means Success
+
+	Build is red means Error 
+
+//Qt creator GUI is close
+
+
+myQtTest.pro file in which there is our environment set up
+
+Sources directory there is our main.cpp program file
+
+Qt creator as created as default Hello World! program
+
+ 
+// Example::
+
+Project 
+  |
+  |____myQtTest
+  	   |
+	   |____myQtTest.pro
+	   |
+	   |____Sources
+		  |
+		  |____main.cpp			
+
+
+ 
+
+//Now come to linux terminal
+
+Example::
+
+..../shubham> ls -l
+Day_2
+
+..../shubham> cd Day_2
+
+..../shubham/Day_2> ls -l
+Debug
+myQtTest
+Release
+
+..../shubham/Day_2> cd Debug
+..../shubham/Day_2/Debug> ls -l
+main.o
+Makefile
+myQtTest ----------> Binary file (Executable)
+
+..../shubham/Day_2> cd Release
+..../shubham/Day_2/Release> ls -l
+main.o
+Makefile
+myQtTest ----------> Binary file (Executable)
+
+
+..../shubham/Day_2> cd myQtTest
+..../shubham/Day_2/myQtTest> ls -l
+main.cpp
+myQtTest.pro
+myQtTest.pro.user
+
+// What is Difference between Debug and Release 
+
+Debug : contain three files same as Releas but Debug take more memory for executable then Release, it is use during development of project  
+
+Release : contain three files same as Debug but Release take less memory executable then Debug , it is use completion of project
+
+Debug : size of executable (binary file) is more because it allow as to debug (make changes in projects)  the executable , Executable is a binary file of program  
+
+Release : size of executable(binary file) is less because it don't allow as to debug (make changes in projects)  the executable  , Executable is a binary file of program , it is a final executable 
+
+
+
+
+
+
