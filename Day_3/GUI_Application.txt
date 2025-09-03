@@ -1,0 +1,120 @@
+# C++ Programming on Linux - 3 
+ 
+ C++ Simple GUI Application 
+
+// how to write simple gui application on linux 
+
+// Open Qtcreator 
+
+ 	select files then select project then Application (Qt)  and Qt Widgets Application then choose ::
+
+	give location of project and name of project then select next ::
+
+	then Build system leave it default then select next ::
+
+	then Class Information leave it default select next ::
+
+	Translation file important select the language as English then next ::
+
+	then select the kit section desktop and for setting in kit select manage option then click on next :: 
+
+	then Project Management version control select none for now then click on finish ::
+
+	then Qt creator create whole structure of gui project ::
+
+// code editor and Design in Qtcreator 
+
+	then go to form floder go to guipoject.ui ( there is switch between desing and editor ) ::
+
+	we get derage and drop option for creation of GUI ::
+
+	search line edit then select line edit then drage and drop to main screen  search pushButton select pushButton then drage and drop to main screen ::
+
+	run code by clicking on run button bottom left corner and then click on Save All, it will show output screen of gui ::
+
+		now in pushButton right click and change the text write Clear we save GUI and switch to editor 
+
+		selecting mainwindow.cpp and in constractor of mainwindow 
+
+			ui->pushButton->setText("Select"); ----> ?
+
+		we Switch to design and right click on PushButton and go to slot and select click()  this open editor and mainwindow.cpp file and create function in class mainwindow on_pushButton_clicked()
+
+			in function:: going to add text in line editor of gui 
+
+				on_pushButton_clicked() 
+				{
+  					ui->lineEdit->setText("Hello World I am here " );
+				}	
+
+		we Switch to design and right click on PushButton and go to slot and select click()  this open editor and mainwindow.cpp file and create function in class mainwindow on_pushButton_2_clicked()
+
+			in function:: going to remove text in line editor of gui
+
+				on_pushButton_2_clicked() 
+				{		
+  					ui->lineEdit->setText("" );
+				}		
+
+
+	run code by clicking on run button bottom left corner and then click on Save All, it will show output screen of gui with one line editor and two buttons one is select and other is clear ::
+	if we click on Select then we get "Hello World I am here" in line editor then if we click on Clear then we get " " in line editor ::
+
+	now switch to editor from design ::
+
+	in mainwindow.cpp  constractor of mainwindow we write ::
+
+		ui->lineEdit->setStyleSheet("QLineEdit{ font-size: 16px;}"); ----> now while running gui application if we click on select we get "Hello World I am here " in Bigger font
+
+		setStyleSheet() -----> use to change the font 
+
+	in same line we can add attribute color: red ::
+
+		ui->lineEdit->setStyleSheet("QLineEdit{ font-size: 16px; color: red; }"); ----> now while running gui application if we click on select we get "Hello World I am here " text in red color and  Bigger font
+
+	Click on hummer button and create build in linux terminal :: 
+
+// on linux termainal in Release floder in than we have executable binary file run that we get our gui application on linux 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
