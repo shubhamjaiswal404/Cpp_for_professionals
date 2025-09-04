@@ -1,0 +1,81 @@
+# C++ Programming on Linux 4 
+
+	From Performance Point Of View Compare C++ Array 
+
+// 
+
+ we will compare performance point of view of C++ array
+
+for example we have two process 
+ we have to process 100000 integers so to be able to handle 
+  first way first say we have to create a integer array and load the data into the array in this example we are going to use random function to simulate loading hundred thousand numbers into the integer array and in C++ 
+there are three popular way to define integer array 
+ first way :: declear datatype int ,then name of array myInt[]  and then size of array 100000 ----> int    myInt[100000];   
+
+second way to declear array :: write std::array< datatype of array , size of array >  then name of array  ------>  std::array<int,100000> myArr;
+
+thrid way to declear array :: write std:: vector<datatype of array> then name of array and note vector size not fix it is variable depending on input 
+
+first way is allocated memory of 100000 integer and second , thrid way is STL(Stander Template Library ) container  
+
+first way is classical integer array 
+
+second array give more feature as bounce protection , intruders
+
+thrid way is flexible we can extend after defining , features of insert , delete ,iterators  and lots of features 
+
+to check the efficiency we time point which is timeStart we are going to use very high resolution clock class, time point for current time of my system ( time during this code line is running in system)   
+	
+	chrono::high_resolution_clock::time_point timeStart = chrono::high_resolution_clock::now();    ----> it return the current time of system in time_point, time_point is datatype for time and we use now() function for current time { Note:: this is time before values are store in array } 
+
+we are going to enter 100000 values into the array , so we are going to create a loop , from i=0  to i=100000
+
+inside the loop array element is going to store is equal to any random number between 1 to 100 for that we use random function  rand()%100 + 1 ;
+
+to check the efficiency we time point which is timeEnd we are going to use very high resolution clock class, time point for current time of my system ( time during this code line is running in system)
+
+        chrono::high_resolution_clock::time_point timeEnd = chrono::high_resolution_clock::now();    ----> it return the current time of system in time_point, time_point is datatype
+for time and we use now() function for current time  { Note:: this is time after values are store in array }
+
+Now Execution time which is total time take by array to stote 100000 value in the array , it is differences between timeStart and timeEnd and we use milliseconds class in chrono
+ and chrono duration_cast<chrono::millisecond>  for easy readibility 
+	chrono::milliseconds executionTime = choro::duration_cast<chrono::milliseconds>(timeEnd - timeStart);
+
+then using executionTime.count() to print number of milliseconds 
+
+this code works same for second and thrid way only comment rest two ways and put only one way because we want to compare all three that why I have create three project and  main.cpp
+each project represent one way of array storing 100000 values in array 
+
+Example::
+myInt array running time is 3 ms
+myArr array running time is 2 ms
+myVec array running time is 1 ms 
+
+I have created compare_array.sh file which is shell script we are using it for running the binary file of each way five times 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
