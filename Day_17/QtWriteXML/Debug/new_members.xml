@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+ <player>
+  <name>John Oliver </name>
+  <membership>Adult Membership</membership>
+  <gerder>Male</gerder>
+  <level>Intermedia</level>
+  <program>House League , Social Double , Tournanment , Social Round Robin , </program>
+ </player>
+ <player>
+  <name>Mary Joson</name>
+  <membership>Adult Membership</membership>
+  <gerder>Female</gerder>
+  <level>Advance</level>
+  <program>House League , Tournanment , </program>
+ </player>
+ <player>
+  <name>Steve Mullli</name>
+  <membership>Senior Membership</membership>
+  <gerder>Male</gerder>
+  <level>Beginner</level>
+  <program>House League , Tournanment , Social Round Robin , </program>
+ </player>
+</root>
