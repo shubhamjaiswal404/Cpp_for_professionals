@@ -1,0 +1,36 @@
+{
+    "gender": "Male",
+    "level": "Intermedia",
+    "memberType": "Adult Membership",
+    "name": "John Oliver",
+    "program": [
+        "House League",
+        "Social Double",
+        "Tournanment",
+        "Social Round Robin"
+    ]
+}
+
+{
+    "gender": "Female",
+    "level": "Advance",
+    "memberType": "Adult Membership",
+    "name": "Christine Andrew",
+    "program": [
+        "House League",
+        "Social Double",
+        "Tournanment"
+    ]
+}
+
+{
+    "gender": "Male",
+    "level": "Beginner",
+    "memberType": "Senior Membership",
+    "name": "Steve Mullin",
+    "program": [
+        "House League",
+        "Social Round Robin"
+    ]
+}
+
