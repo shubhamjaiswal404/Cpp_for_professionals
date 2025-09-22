@@ -1,0 +1,12 @@
+{
+    "gender": "Male",
+    "level": "Intermedia",
+    "memberType": "Adult Membership",
+    "name": "John Oliver",
+    "program": [
+        "House League",
+        "Social Double",
+        "Tournanment",
+        "Social Round Robin"
+    ]
+}
