@@ -1,0 +1,1 @@
+g++  -Wall -lpthread -std=c++11 -O3 -DNDEBUG -rdynamic CMakeFiles/myThreadReadFile.dir/myThreadReadFile.cpp.o -o myThreadReadFile 
