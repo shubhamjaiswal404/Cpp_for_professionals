@@ -1,0 +1,40 @@
+Start testing: Sep 26 06:22 IST
+----------------------------------------------------------
+1/2 Testing: myTest1
+1/2 Test: myTest1
+Command: "/home/shubham/workspace/Cpp_for_professionals/Day_40/myThreadReadFile" "example.txt"
+Directory: /home/shubham/workspace/Cpp_for_professionals/Day_40
+"myTest1" start time: Sep 26 06:22 IST
+Output:
+----------------------------------------------------------
+Thread  1 : 10001Hello World I am here
+Thread  0 : 00001Hello World I am here
+Thread  1 : 20000Hello World I am here
+Thread  0 : 10000Hello World I am here
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"myTest1" end time: Sep 26 06:22 IST
+"myTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: myTest2
+2/2 Test: myTest2
+Command: "/home/shubham/workspace/Cpp_for_professionals/Day_40/myReadFile" "example.txt"
+Directory: /home/shubham/workspace/Cpp_for_professionals/Day_40
+"myTest2" start time: Sep 26 06:22 IST
+Output:
+----------------------------------------------------------
+00001Hello World I am here
+20000Hello World I am here
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"myTest2" end time: Sep 26 06:22 IST
+"myTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 26 06:22 IST
