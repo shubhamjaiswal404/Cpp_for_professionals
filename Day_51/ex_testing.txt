@@ -1,0 +1,21 @@
+To: George Shmidlap
+From: Rita Marlowe
+Subject: Hui test regex Filter Message One 
+------------------------------
+Court Bookings
+
+------------------------------
+To:Hui Yuan
+From: Tennis Club
+Subject: Booking Confirmation
+-----------------------------
+The booking has been confirmed.
+Date: 2020-11-28
+Start time: 01:00 PM
+End time:   02:00 PM
+Bookef Resources:
+. Court 4
+Refund and Cancellation Policies
+Court Bookings
+48 hours cancellation notice is required for court bookings.
+The club reserves the right to switch your booking to another court if necessary 
