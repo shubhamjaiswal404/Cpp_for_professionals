@@ -33,39 +33,6 @@ int SigletonReadFile(int t_id)
 }
 
 
-int ThreadReadFile( int t_id , char *pFileName)
-{
-    char inFileName[30];
-    std::string line;
-    int i , initPos;
-    initPos = t_id * 2500 * 27;
-   // memset(inFileName, '\0',sizeof(inFileName) + 1);
-    memset(inFileName, '\0',sizeof(inFileName));
-    memcpy(inFileName , pFileName , strlen(pFileName));
-
-    ifstream myFile(inFileName);
-    if(myFile.is_open())
-    {
-        i = 0;
-        myFile.seekg(initPos, ios::beg);
-        while( getline(myFile, line) && i < 2500)
-        {
-            i++;
-            mtx.lock();
-            std::cout << line << "-> Thread : " << t_id <<" : "<< i << std::endl;
-            mtx.unlock();
-        }
-        myFile.close();
-    }
-    else
-    {
-        std::cout << " can not open file example.txt for reading " << std::endl;
-    }
-
-    return 0;
-}
-
-
 int main(int argc , char* argv[])
 {
     int j , ret = 0;
@@ -87,7 +54,7 @@ int main(int argc , char* argv[])
 
     try{
         for(j=0 ; j< MAX_THREADS;  j++) {
-          //  rc[j] = std::async(ThreadReadFile,j, argv[1]);
+          
             rc[j] = std::async(SigletonReadFile,j);
         }
 
