@@ -1,0 +1,74 @@
+# C++ Programming on Linux -1 
+
+Using Linux terminal command mode 
+
+
+// printing Hello world 
+
+we are running program directly on command line 
+specifie main function that return integer which is zero 
+
+std::cout --> it is a standard cout device which is already specify in under header file #include<iostream>
+
+std::endl --> it is a standard end of line puts the cursor to next line or jumps to next line  which is also specify in under header file #include<iostream>
+
+
+Hello.cpp is program compile by command :: g++ Hello.cpp -o Hello
+
+g++ is complier use to compile Hello.cpp program 
+
+-o Hello means generate output as birnary file name as Hello which is also called as executable
+
+Executable or binary file Hello can  be directly run on command line ./Hello
+
+
+// printing received arguments from command line 
+
+# int main() {
+
+in main function we haven't specify any parameter , it means this program is not receiving over ignored all argument from command line 
+
+
+
+# int main( int argv , char* argv[] ) {
+
+
+so in order our program is able to receive arguments from command line we have to specify two parametrs
+
+int argc 
+first parameter specify integer value argc , argc is the total argument we receive from command line and 
+
+char* argv[] 
+second parameter is char* ( char pointer ) which will point to each individual argument we receive from command line  
+
+now lets print these two parametrs 
+
+Example 1::
+ ..../shubham> ./Hello 
+
+argc = 1 , argv[] = ./Hello
+
+
+Example 2::
+ ..../shubham> ./Hello arg1 arg2 arg3 arg4
+
+argc = 5 , argv[] = ./Hello , arg1 , arg2 , arg3 , arg4 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
