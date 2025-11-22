@@ -1,0 +1,15 @@
+This Programming Guide is for Xerces-C++ version 3.2.3.
+*******************************************************
+Install and build steps 
+By default:
+
+1) tar -xzvf xerces-c-3.3.0.tar.gz
+2) cd ${exact directory}
+3) ./configure
+4) make
+5) sudo make install
+
+
+/usr/local/lib -->Library
+
+/usr/local/include/xercesc  -->include-->header
