@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bookstore>
+
+  <book category="cooking" language="Italian">
+    <title>Everyday Italian</title>
+    <author>Bruno Pasquale</author>
+    <price currency="CAD">102.83</price>
+  </book>
+
+</bookstore>
