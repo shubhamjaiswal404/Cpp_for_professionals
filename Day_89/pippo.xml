@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<html>
+  <head>
+    <title>C++ Web Program for XML Parse Example</title>
+</head>
+  <body>
+    <div style="width:100%; font-size:36px; font-weight:bold; text-align:center; color:blue;">
+      <h2>C++ WEB XML Example</h2>
+      <body_text>DOM Load and Save (DOMLS) Specification.
+        <br/>Book Store XML
+      </body_text>
+    </div>
+    <br/>
+    <bookstore>
+      <book category="cooking" language="Italian">
+        <book_title>Everyday Italian</book_title>
+        <author>Bruno Pasquale</author>
+        <price currency="CAD">102.83</price>
+</book>
+      <br/>
+      <book category="web" language="English">
+        <book_title>Learning XML</book_title>
+        <author>John Boland</author>
+        <price currency="USD">59.33</price>
+</book>
+</bookstore>
+  </body>
+
+</html>
