@@ -1,0 +1,32 @@
+#ifndef MYSAXHANDLER_HPP // MY_SAX_PARSER_H
+#define MYSAXHANDLER_HPP // MY_SAX_PARSER_H
+
+#include <xercesc/util/XMLUniDefs.hpp>
+#include <xercesc/sax/AttributeList.hpp>
+#include <xercesc/sax/HandlerBase.hpp>
+
+using namespace std;
+using namespace xercesc;
+
+class MySAXHandler : public HandlerBase
+{
+public:
+    MySAXHandler();
+    ~MySAXHandler();
+
+    void startElement(const XMLCh* const name, AttributeList& attributes); //start of an element
+    void endElement(const XMLCh* const name); //end of an element
+    void characters (const XMLCh* const chars , const XMLSize_t length); // character data between element.
+
+    /*
+     * virtual void error(const SAXParseException& exc);  <- recoverable parser error.
+     * virtual void warning ( const SAXParseException& exc); <-parser warning.
+     */
+
+    void fatalError(const SAXParseException& ); // Report a fatal XML parsing error.
+private:
+    int numSeq;
+
+};
+
+#endif // MYSAXHANDLER_HPP

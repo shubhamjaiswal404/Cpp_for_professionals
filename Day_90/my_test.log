@@ -1,0 +1,53 @@
+1	-> Start : bookstore
+2	-> Start : book
+		-> category = cooking
+		-> language = Italian
+3	-> Start : title
+4	->Data : Everyday Italian
+5	-> End : title
+6	-> Start : author
+7	->Data : Giada De Laurentiis
+8	-> End : author
+9	-> Start : year
+10	->Data : 2005
+11	-> End : year
+12	-> Start : price
+		-> currancy = CAD
+13	->Data : 30.00
+14	-> End : price
+15	-> End : book
+16	-> Start : book
+		-> category = children
+		-> language = English
+17	-> Start : title
+18	->Data : Harry Potter
+19	-> End : title
+20	-> Start : author
+21	->Data : J K. Rowling
+22	-> End : author
+23	-> Start : year
+24	->Data : 2005
+25	-> End : year
+26	-> Start : price
+		-> currancy = USD
+27	->Data : 29.99
+28	-> End : price
+29	-> End : book
+30	-> Start : book
+		-> category = web
+		-> language = Chinese
+31	-> Start : title
+32	->Data : Learning XML
+33	-> End : title
+34	-> Start : author
+35	->Data : Bruno Pasquale
+36	-> End : author
+37	-> Start : year
+38	->Data : 2003
+39	-> End : year
+40	-> Start : price
+		-> currancy = RMB
+41	->Data : 39.95
+42	-> End : price
+43	-> End : book
+44	-> End : bookstore
