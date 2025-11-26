@@ -1,0 +1,17 @@
+{
+    "gender": "Male",
+    "level": "Intermedia",
+    "memberType": "Adult Membership",
+    "name": "Steve Ansrews",
+    "fee": 235.16,
+    "paid": true,
+    "year": 2001,
+    /* This is comment */
+    "program": [
+        "House League",
+        "Social Double",
+        "Tournanment",
+        "Social Round Robin"
+    ],
+    "Note": null
+}
