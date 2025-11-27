@@ -1,0 +1,33 @@
+Protocol Buffer Message 
+
+The Message interface (structure data) define method that let you check,
+manipulate, read , or write the entire message , includeing parsing from and 
+serializing to binary strings.
+
+******** Build and compile Steps ******
+1) Create message (structure data) .proto file (ex. message.prot)
+2) proto compile :
+Because you want C++ classes , you use the --cpp out option 
+	protoc -I=$SRC_DIR --cpp_out=$DST_DIR $SRC_DIR/message.proto
+This generates the following files in your specified destination directory:
+	message.pb.h, the header which declares your generated classes
+	message.pb.cc, which contain the implementation of your classes.
+3) Write API Using message (object)
+4) Edit Makefile and compile
+
+**********Parsing and Serialization ************
+
+Finally , each protocol buffer class has methods for writing and reading message of 
+your chosen type using the protocol buffer binary format . These include:
+
+1) bool SerializeToString9string* output) const;:
+   serializes the message and stores the bytes in the given string. Note that the bytes
+   are binary , not text; we only use the string class as a convenient container.
+2) bool ParserFromString( const string& data);:
+   parses amessage from the given string.
+3)bool SerializeTOOstream(ostream* output) const;:
+  write the message to the given C++ ostream
+4) bool ParseFromIstream (istream* input);:
+   parses a message from the given C++ istream.
+
+

@@ -1,0 +1,48 @@
+// New version
+syntax = "proto3";
+package Purchase;
+
+message orderItem{
+
+         int32 code = 1;
+         string desc = 2 ;
+         int32 qty = 3;
+         double price = 4;
+
+}
+
+message Order{
+
+        int32 id = 1;
+        string vendor = 2;
+        repeated orderItem item = 3;
+
+}
+
+
+/*
+// Older version
+syntax = "proto2";
+package Purchase;
+
+message orderItem{
+
+        required int32 code = 1;
+        optional string desc = 2 ;
+        required int32 qty = 3;
+        optional double price = 4;
+
+
+}
+
+message Order{
+
+        required int32 id = 1;
+        optional string vendor = 2;
+        repeated orderItem item = 3;
+
+}
+*/
+// Command to compile Order.proto
+// Linux Terminal
+//....> protoc --cpp_out=./ Order.proto
